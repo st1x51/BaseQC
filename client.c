@@ -7,6 +7,7 @@
 | Handle's "clients" (eg, Players) connecting, disconnecting, etc.           |
 +=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
 */
+void() CheckImpulses;
 
 //player jump code
 void() PlayerJump =
@@ -56,6 +57,7 @@ void() PlayerPreThink =
 {
 	SetClientFrame ();
 	WaterMove ();
+	CheckImpulses();
 };
 //Called every frame, AFTER physics.
 void() PlayerPostThink = 
