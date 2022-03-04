@@ -8,23 +8,24 @@
 | does much, except to setup basic variables and entities.                   |
 +=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
 */
-void() precaches;
+void() WorldPrecache;
 void() LightStyles_setup;
 
- void() main = {};
- void() worldspawn = 
- {
- precaches();
- LightStyles_setup();
- };
- void() SetNewParms = {};
- void() SetChangeParms = {};
- void() StartFrame = {};
- 
-void() precaches =
+void() main = {};
+void() worldspawn = 
 {
-//models
- precache_model ("progs/player.mdl");
- //sounds
- precache_sound("player/jump.wav");
+	WorldPrecache();
+	LightStyles_setup();
+};
+
+void() SetNewParms = {};
+void() SetChangeParms = {};
+void() StartFrame = {};
+
+void() WorldPrecache =
+{
+	//models
+	precache_model ("progs/player.mdl");
+	//sounds
+	precache_sound("player/jump.wav");
 };

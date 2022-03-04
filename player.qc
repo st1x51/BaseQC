@@ -66,7 +66,7 @@ void () SetClientFrame =
 
     self.anim_time = time + 0.1;
 
-    local float anim_change, run;
+    float anim_change, run;
 
     if (self.velocity_x || self.velocity_y)
         run = TRUE;

@@ -10,5 +10,5 @@
 
 void() CheckImpulses =
 {
-self.impulse = 0;                              // Clear impulse list.
+	self.impulse = 0;                              // Clear impulse list.
 };

@@ -11,13 +11,12 @@
 
 ../progs.dat                                        // Output File
 
-Defs.QC                                             // Definitions
-Main.QC                                             // Main subroutines
-Damage.qc
-Player.qc
-Client.QC                                           // Client subroutines
-Dummys.QC                                           // Null spawn functions
-Internal.QC
-Lights.QC
-Impulses.QC
+defs.qc                                             // Definitions
+main.qc                                             // Main subroutines
+damage.qc
+player.qc
+client.qc                                           // Client subroutines
+dummys.qc                                           // Null spawn functions
+lights.qc
+impulses.qc
 

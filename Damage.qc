@@ -14,7 +14,7 @@
 */
 void(entity targ, entity attacker) Killed =
 {
-	local entity oself;
+	entity oself;
 
 	if (targ.health < -99)
 		targ.health = -99;		// don't let sbar look bad if a player
@@ -38,8 +38,8 @@ This should be the only function that ever reduces health.
 
 void(entity targ, entity inflictor, entity attacker, float damage) T_Damage=
 {
-    local	vector	dir;
-    local	entity	oldself;
+    vector	dir;
+    entity	oldself;
 
 
     if (!targ.takedamage)
